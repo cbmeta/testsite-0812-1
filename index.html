@@ -50,18 +50,22 @@
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
+  console.log("wishlist");
   cbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
+  console.log("add to cart");
   cbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
+  console.log("checkout");
   cbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
+  console.log("purchase");
   cbq('track', 'Purchase', {
     value: 100,
     currency: 'USD',
@@ -69,10 +73,12 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
+  console.log("subscribe");
   cbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
+  console.log("register");
   cbq('track', 'CompleteRegistration');
 }, false);
 </script>
