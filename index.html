@@ -1,6 +1,6 @@
 <head>
 <!-- Meta Pixel Code -->
-<script>
+<!-- <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -14,7 +14,7 @@
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1686889945133966&ev=PageView&noscript=1"
-/></noscript>
+/></noscript> -->
 <script>
   var __cbSdkHost = "https://capig04.cb-qa-site4.com/";
   var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
@@ -50,30 +50,30 @@
 
 <script type="text/javascript">
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
-  fbq('track', 'AddToWishlist');
+  cbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
+  cbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
-  fbq('track', 'InitiateCheckout');
+  cbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  fbq('track', 'Purchase', {
+  cbq('track', 'Purchase', {
     value: 100,
     currency: 'USD',
   });
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
-  fbq('track', 'Subscribe');
+  cbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
-  fbq('track', 'CompleteRegistration');
+  cbq('track', 'CompleteRegistration');
 }, false);
 </script>
 </body>
